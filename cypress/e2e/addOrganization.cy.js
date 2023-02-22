@@ -17,7 +17,7 @@ describe("add organization", () => {
         addOrganization.addOrg("viki1234");
         addBoard.addBoardHeading.should('be.visible');
 
-        addBoard.addBoard("Vikinnjjjjj");
+        addBoard.addBoard("Vikinn");
 
         addBoard.boardTypeHeading.should('be.visible')
             .and('have.css', 'color')

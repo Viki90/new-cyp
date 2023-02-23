@@ -15,13 +15,10 @@ describe("add organization", () => {
             .and('eq', 'rgb(62, 139, 117)');
 
         addOrganization.addOrg("viki1234");
+
         addBoard.addBoardHeading.should('be.visible');
 
         addBoard.addBoard("Vikinn");
-
-        addBoard.boardTypeHeading.should('be.visible')
-            .and('have.css', 'color')
-        
 
     });
 

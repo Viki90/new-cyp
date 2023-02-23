@@ -15,9 +15,21 @@ class AddBoardPage {
     return cy.get('h2').contains('Board Type');
    }
 
+   get radioButton() {
+    return cy.get('.vs-c-radio.vs-u-cursor--pointer').first();
+   }
+
+   get finishBtn() {
+    return cy.get('button').contains('Finish');
+   }
+
    addBoard(boardName) {
      this.boardTitle.type(boardName);
      this.nextbtn.click();
+     this.radioButton.click();
+     this.nextbtn.click();
+     this.nextbtn.click();
+     this.finishBtn.click();
    }
 }
 
